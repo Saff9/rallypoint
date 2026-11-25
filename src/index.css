@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm charcoal base */
+  --color-rally-bg: #0f100d;
+  --color-rally-subtle: #131410;
+  --color-rally-surface: #181a15;
+  --color-rally-border: #272a23;
+
+  /* Bone text */
+  --color-rally-text: #ece9df;
+  --color-rally-muted: #8f9185;
+
+  /* Single accent: vermilion */
+  --color-rally-primary: #ff5a24;
+  --color-rally-primary-hover: #ff7544;
+  --color-rally-ink: #0f100d;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-rally-bg);
+  color: var(--color-rally-text);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(255, 90, 36, 0.35);
+  color: #ece9df;
+}
